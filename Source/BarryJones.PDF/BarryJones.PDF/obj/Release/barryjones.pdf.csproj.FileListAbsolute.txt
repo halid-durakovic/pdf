@@ -1,3 +1,0 @@
-F:\Backup\Documents\Development\Programming\Projects\barryjones\barryjones.pdf\obj\Release\ResolveAssemblyReference.cache
-F:\Backup\Documents\Development\Programming\Projects\barryjones\barryjones.pdf\obj\Release\BarryJones.PDF.dll
-F:\Backup\Documents\Development\Programming\Projects\barryjones\barryjones.pdf\bin\Release\BarryJones.PDF.dll
