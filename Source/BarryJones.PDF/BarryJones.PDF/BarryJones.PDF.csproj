@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DC6DA37E-9A9D-43A2-9CA1-56E68E81ADCA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BarryJones.PDF</RootNamespace>
+    <AssemblyName>BarryJones.PDF</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Catalog.cs" />
+    <Compile Include="GraphicalElements\Element.cs" />
+    <Compile Include="GraphicalElements\Paragraph.cs" />
+    <Compile Include="GraphicalElements\Table.cs" />
+    <Compile Include="Header.cs" />
+    <Compile Include="HelperClasses\AFMFileReader.cs" />
+    <Compile Include="Pages.cs" />
+    <Compile Include="PdfDocument.cs" />
+    <Compile Include="PdfGraphics.cs" />
+    <Compile Include="PdfPage.cs" />
+    <Compile Include="PdfPageOrientation.cs" />
+    <Compile Include="PdfPageSizes.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Fonts\Courier-Bold.afm" />
+    <None Include="Fonts\Courier-BoldOblique.afm" />
+    <None Include="Fonts\Courier-Oblique.afm" />
+    <None Include="Fonts\Courier.afm" />
+    <None Include="Fonts\Helvetica-Bold.afm" />
+    <None Include="Fonts\Helvetica-BoldOblique.afm" />
+    <None Include="Fonts\Helvetica-Oblique.afm" />
+    <None Include="Fonts\Helvetica.afm" />
+    <None Include="Fonts\php_a0100131.afm" />
+    <None Include="Fonts\php_a010013l.afm" />
+    <None Include="Fonts\php_Courier-Bold.afm" />
+    <None Include="Fonts\php_Courier-BoldOblique.afm" />
+    <None Include="Fonts\php_Courier-Oblique.afm" />
+    <None Include="Fonts\php_Courier.afm" />
+    <None Include="Fonts\php_Helvetica-Bold.afm" />
+    <None Include="Fonts\php_Helvetica-BoldOblique.afm" />
+    <None Include="Fonts\php_Helvetica-Oblique.afm" />
+    <None Include="Fonts\php_Helvetica.afm" />
+    <None Include="Fonts\php_Symbol.afm" />
+    <None Include="Fonts\php_Times-Bold.afm" />
+    <None Include="Fonts\php_Times-BoldItalic.afm" />
+    <None Include="Fonts\php_Times-Italic.afm" />
+    <None Include="Fonts\php_Times-Roman.afm" />
+    <None Include="Fonts\php_ZapfDingbats.afm" />
+    <None Include="Fonts\Symbol.afm" />
+    <None Include="Fonts\Times-Bold.afm" />
+    <None Include="Fonts\Times-BoldItalic.afm" />
+    <None Include="Fonts\Times-Italic.afm" />
+    <None Include="Fonts\Times-Roman.afm" />
+    <None Include="Fonts\vssver.scc" />
+    <None Include="Fonts\ZapfDingbats.afm" />
+    <None Include="GraphicalElements\vssver.scc" />
+    <None Include="HelperClasses\vssver.scc" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Structures\vssver.scc" />
+    <None Include="Types\vssver.scc" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Structures\PdfFont.cs" />
+    <Compile Include="Structures\PdfRectangle.cs" />
+    <Compile Include="Structures\PdfRectangleF.cs" />
+    <Compile Include="Structures\PdfResourceDictionary.cs" />
+    <Compile Include="Structures\Type1Font.cs" />
+    <Compile Include="Trailer.cs" />
+    <Compile Include="Types\PdfArray.cs" />
+    <Compile Include="Types\PdfBoolean.cs" />
+    <Compile Include="Types\PdfDictionary.cs" />
+    <Compile Include="Types\PdfHexString.cs" />
+    <Compile Include="Types\PdfImage.cs" />
+    <Compile Include="Types\PdfIndirectReference.cs" />
+    <Compile Include="Types\PdfInlineImage.cs" />
+    <Compile Include="Types\PdfInt.cs" />
+    <Compile Include="Types\PdfLexicalString.cs" />
+    <Compile Include="Types\PdfName.cs" />
+    <Compile Include="Types\PdfNumeric.cs" />
+    <Compile Include="Types\PdfObject.cs" />
+    <Compile Include="Types\PdfReal.cs" />
+    <Compile Include="Types\PdfStream.cs" />
+    <Compile Include="Types\PdfString.cs" />
+    <Compile Include="Types\PdfXObjectStream.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
